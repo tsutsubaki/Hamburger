@@ -1,0 +1,63 @@
+@use '../foundation/global' as g;
+
+#l-header{
+   font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+   /* ボックスの高さと同一 */
+    color: #707070;
+    background-color: rgba(255, 247, 239, 1);
+    width: 375px;
+       
+    @include g.mq(md){
+        background-color: darkgoldenrod;
+        font-size: g.$link-font-size + 2px;
+        width: 100%;
+       
+        
+    }
+    @include g.mq(lg){
+          background-color: cadetblue;
+          font-size: g.$link-font-size + 8px;
+          width: 100%;
+         
+        }
+  
+   
+    &__menu{
+    text-align: right;
+    margin-right: 3rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #707070;
+    cursor: pointer;
+              
+    }
+
+                 
+    &__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+    
+  
+/* ボックスの高さと同一 */
+    color: #707070;
+    }
+}
+
+
+
+.l-main{
+    display: flex;
+
+    &__content{
+     height: 80%;
+    }
+}

@@ -1,0 +1,83 @@
+@use '../foundation/global' as g;
+
+.l-sidebar{
+  &__background{
+    background-color: rgba(0, 0, 0, 0.502);
+     } 
+  &__nav{
+  position: fixed;
+  z-index: 999;
+  margin-top:-225px;
+  width:328px;
+  background-color: rgba(242, 237, 233, 1);
+  /*動き*/
+  transition: all 0.6s;   
+  height: 2716px;
+  right: -500px;
+
+    &.active{
+      right: 0;
+      transition: all 0.6s;   
+    }
+  }
+
+&__top-title{
+  margin-top: 178px;
+}
+
+&__title{
+  font-family: g.$small-font;
+  color: #707070;
+  font-style: bold;
+  font-size: 24px;
+  line-height: 100%;
+  margin: 60px 0px 40px 46px;
+     
+}
+
+
+     &__item{
+        font-weight: 300;
+        font-family: g.$small-font;
+        margin: 20px 102px 20px 66px;
+        font-size: 20px;
+        width: 180px;
+     }
+
+     
+
+    }
+
+
+
+
+//バツ
+.l-sidebar__close{
+  display: block;
+  position: relative;
+  width: 4px;
+  height: 4px;
+  top: 19px;
+  right: -267px;
+  cursor: pointer;
+  
+}
+.l-sidebar__close::before, .l-sidebar__close::after{
+  content: "";
+  position: absolute;
+  top: 10%;
+  left:4px;
+  width: 4px;
+  height: 30px;
+  background: #707070;
+}
+.l-sidebar__close::before{
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.l-sidebar__close::after{
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+
+
+    

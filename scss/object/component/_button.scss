@@ -1,0 +1,47 @@
+@use"../../foundation/global" as g;
+
+.c-search-box{
+    display: inline-block;
+    position: relative;
+     }
+
+i.fa-solid{
+    position: absolute;
+    font-size: 25px;
+    top: 39px;
+    left: 28px;
+    margin: 12px 183px 10px 9px;
+    }
+
+input {
+
+&#sbox1{
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 10px 8px 10px 10px;
+    width: 216px;
+    height: 46px;
+    
+    }
+
+ &#sbtn1{
+    background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
+    border: 1px solid #707070;
+    border-radius: 10px;
+    width: 90px;
+    height: 46px;
+    margin-left: 16px;
+    font-family: "mplus-1mn-bold";
+    color: rgba(112, 112, 112, 1);
+    font-size: 16px;
+    
+       }
+    }
+
+    
+    form#form1{
+        display: flex;
+        margin: 40px 0 39px 27px;
+    }
+
+ 

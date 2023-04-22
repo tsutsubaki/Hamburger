@@ -1,0 +1,55 @@
+@use "../../foundation/global" as g;
+
+.c-inner {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+div.c-line{
+    border: solid 1px white;
+    width: 71px;
+    position: absolute;
+
+    top: 100px;
+    left: 45px;
+
+        &__label{
+            border: solid 2px rgba(255, 255, 255, 1);
+            width: 33.89px;
+            position: absolute;
+            z-index: 100;
+            top: 80px;
+            left: 15.5px;
+        
+          }
+
+}
+
+h2.c-label{
+    font-family: "Roboto";
+    font-style: Bold;
+    font-size: 38px;
+    line-height: 48px;
+    line-height: 100%;
+    align-items: left;
+    color: rgba(255, 255, 255, 1);
+    margin: 20px 156px 581px 15px;
+    width: 200px;
+    height: 48px;
+}
+ 
+ul.c-figcaption__title-1{
+    color: rgba(60, 42, 16, 1);
+    font-family: "mplus-1m-bold";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    top:16px;
+    left: 16px;
+}
+
+.c-item{
+    align-items: center;
+}
+

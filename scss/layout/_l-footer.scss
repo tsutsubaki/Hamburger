@@ -1,0 +1,33 @@
+
+@use"../foundation/global" as g;
+
+.l-footer{
+ box-sizing: border-box;
+ position: absolute;
+ width: 375px;
+ height: 150px;
+ left: 0px;
+ top: 2565px;
+ background-image: url(../img/footer.png);
+
+ p{
+    width: 225px;
+    height: 27px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 16px;
+    margin-left: 76px;
+    font-family: 'M+ 1m';
+    font-weight: 310;
+ }
+
+ 
+}
+
+small.l-footer_copyright{
+    display: block;
+    margin-top: 70px;
+    margin-left: 109px;
+    font-family: 'M+ 1m';
+    color: rgba(255, 255, 255, 1);
+    font-weight:300;
+   }

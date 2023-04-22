@@ -1,0 +1,32 @@
+
+@mixin bg-img($path, $size: cover, $pos: center center, $repeat: no-repeat) {
+  background-image: url($path);
+  background-size: $size;
+  background-position: $pos;
+  background-repeat: $repeat;
+}
+
+@mixin main-area{
+  background-color: rgba(255, 255, 255, 0.8);;
+  width: 303px;
+  height: 156px;
+  opacity: 1.0;
+  padding-top: 16px;
+  padding-left: 16px;
+  font-family: 'M+ 1m';
+}
+
+/////レスポンシブ//////
+// マップ型変数を定義
+$breakpoints: (
+  'md': 'screen and (min-width: 376px)' ,
+  'lg': 'screen and (min-width: 561px)' ,
+) !default;
+
+// メディアクエリ用 mixin デフォルトはmd
+@mixin mq($arg-breakpoint: md) {
+  @media #{map-get($breakpoints, $arg-breakpoint)} {
+    @content;
+  }
+}
+

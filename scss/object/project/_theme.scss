@@ -1,0 +1,156 @@
+@use '../../foundation/global' as g;
+
+.c-top__caption{
+background-image:url("../img/mainvisual-pc.jpg");
+background-size: cover;
+box-sizing: border-box;
+position: absolute;
+width: 375px;
+height: 285px;
+left: 0px;
+
+
+}
+
+h1.c-top__title{
+    font-family: 'M+ 1m';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;       
+    margin: 122px 134px 110px 25px; 
+    }
+
+figcaption{
+
+&.figcaption-1{
+    background-image: url("../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png");
+    box-sizing: border-box;
+    position: absolute;
+    width: 335px;
+    height: 642px;
+    left: 20px;
+    top: 520px;
+}
+   
+&.figcaption-2{
+    background-image: url("../img/poteto.png");
+    box-sizing: border-box;
+    position: absolute;
+    width: 336px;
+    height: 643px;
+    left: 19px;
+    top: 1182px;
+    }
+
+
+
+   
+} 
+
+div.p-solution__list{
+background-image: url("../img/screen2020-02-10 11.47.42.png");
+box-sizing: border-box;
+position: absolute;
+width: 375px;
+height: 691px;
+left: 0px;
+top: 1874px;
+
+  
+}
+
+.p-gray__area{
+    box-sizing: border-box;
+    width: 375px;
+    height: 415px;
+    left: 0px;
+    background: rgba(0, 0, 0, 1);
+    opacity: 53%;
+   
+    position: absolute;
+    }
+
+    .p-gray__area__second{
+        box-sizing: border-box;
+        width: 375px;
+        height: 276px;
+        left: 0px;
+        background: #000000;
+        opacity: 40%;
+       
+        position: absolute;
+        top: 415px;
+
+    }
+
+    h2.p-solution__list__title{
+        position: absolute;
+        z-index: 100;
+        width: 240px;
+        height: 45px;
+        left: 42px;
+        top: 42px;        
+        font-family: 'M+ 1m';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+        /* ボックスの高さと同一 */
+            
+        color: #FFFFFF;
+      
+    }
+    p.p-solution__text{
+        position: absolute;
+        z-index: 100;
+        width: 295px;
+        height: 518px;
+        left: 40px;
+        top: 116px;
+
+        font-family: g.$main-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 33px;
+        /* または236% */
+
+        color: #FFFFFF;
+        }
+ 
+ .p-theme{
+            
+            position: absolute;
+            margin-top: -350px;
+            margin-left: 16px;
+            font-family: g.$main-font;
+
+            @include g.main-area;
+
+    &__theme{
+            position: absolute;
+          
+            margin: -180px 16px 16px 16px;
+                      
+            @include g.main-area;
+        }
+    
+            
+    &__service{
+        list-style: none;
+        font-family: 'M+ 1m';
+        color: g.$color-c-figcaption__title;
+        font-size: 16px;
+        margin: 6px 16px 16px 0px;
+        position: absolute;
+       
+        width: 271px;
+        height: 92px;
+    }
+
+ }
+
+ 
+
