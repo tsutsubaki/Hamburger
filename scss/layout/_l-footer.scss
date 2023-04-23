@@ -9,6 +9,7 @@
  left: 0px;
  top: 2565px;
  background-image: url(../img/footer.png);
+ @include g.font-size(16);
 
  p{
     width: 225px;

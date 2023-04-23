@@ -1,7 +1,7 @@
 @use '../../foundation/global' as g;
 
 .c-top__caption{
-background-image:url("../img/mainvisual-pc.jpg");
+background-image:url("../img/mainvisual-sp.jpg");
 background-size: cover;
 box-sizing: border-box;
 position: absolute;
@@ -16,7 +16,7 @@ h1.c-top__title{
     font-family: 'M+ 1m';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    @include g.font-size(36);
     line-height: 53px;
     color: #FFFFFF;       
     margin: 122px 134px 110px 25px; 
@@ -43,10 +43,7 @@ figcaption{
     left: 19px;
     top: 1182px;
     }
-
-
-
-   
+ 
 } 
 
 div.p-solution__list{
@@ -68,7 +65,6 @@ top: 1874px;
     left: 0px;
     background: rgba(0, 0, 0, 1);
     opacity: 53%;
-   
     position: absolute;
     }
 
@@ -79,7 +75,6 @@ top: 1874px;
         left: 0px;
         background: #000000;
         opacity: 40%;
-       
         position: absolute;
         top: 415px;
 
@@ -95,10 +90,10 @@ top: 1874px;
         font-family: 'M+ 1m';
         font-style: normal;
         font-weight: 700;
-        font-size: 30px;
+        @include g.font-size(30);
         line-height: 45px;
         /* ボックスの高さと同一 */
-            
+       
         color: #FFFFFF;
       
     }
@@ -113,7 +108,7 @@ top: 1874px;
         font-family: g.$main-font;
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
+        @include g.font-size(14);
         line-height: 33px;
         /* または236% */
 
@@ -142,7 +137,7 @@ top: 1874px;
         list-style: none;
         font-family: 'M+ 1m';
         color: g.$color-c-figcaption__title;
-        font-size: 16px;
+        @include g.font-size(16);
         margin: 6px 16px 16px 0px;
         position: absolute;
        

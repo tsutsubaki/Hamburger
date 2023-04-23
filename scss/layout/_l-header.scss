@@ -11,14 +11,16 @@
        
     @include g.mq(md){
         background-color: darkgoldenrod;
-        font-size: g.$link-font-size + 2px;
+        //font-size: g.$link-font-size + 2px;
+        @include g.font-size(22);
         width: 100%;
        
         
     }
     @include g.mq(lg){
           background-color: cadetblue;
-          font-size: g.$link-font-size + 8px;
+          //font-size: g.$link-font-size + 8px;
+          @include g.font-size(22);
           width: 100%;
          
         }
@@ -26,11 +28,11 @@
    
     &__menu{
     text-align: right;
-    margin-right: 3rem;
+    margin-right: 0.5rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    @include g.font-size(20);
     color: #707070;
     cursor: pointer;
               
@@ -44,7 +46,7 @@
     font-family: 'Roboto';
     font-style: bold;
     font-weight: 700;
-    font-size: 40px;
+    @include g.font-size(40);
     
   
 /* ボックスの高さと同一 */

@@ -9,7 +9,6 @@ div.c-line{
     border: solid 1px white;
     width: 71px;
     position: absolute;
-
     top: 100px;
     left: 45px;
 
@@ -28,7 +27,7 @@ div.c-line{
 h2.c-label{
     font-family: "Roboto";
     font-style: Bold;
-    font-size: 38px;
+    @include g.font-size(38);
     line-height: 48px;
     line-height: 100%;
     align-items: left;
@@ -42,7 +41,7 @@ ul.c-figcaption__title-1{
     color: rgba(60, 42, 16, 1);
     font-family: "mplus-1m-bold";
     font-weight: 700;
-    font-size: 22px;
+    @include g.font-size(22);
     line-height: 24px;
     height: 24px;
     top:16px;

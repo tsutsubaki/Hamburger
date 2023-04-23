@@ -14,7 +14,6 @@
 }
 
 html {
-  font-size: 62.5%; /*1rem =10px*/
   line-height: 1.6;
   height: 100%;
   scroll-behavior: smooth;
@@ -63,24 +62,27 @@ a:hover img {
 @media screen and (min-width: 376px) {
   #l-header {
     background-color: darkgoldenrod;
-    font-size: 16px;
+    font-size: 22px;
+    font-size: 1.375rem;
     width: 100%;
   }
 }
-@media screen and (min-width: 561px) {
+@media screen and (min-width: 835px) {
   #l-header {
     background-color: cadetblue;
     font-size: 22px;
+    font-size: 1.375rem;
     width: 100%;
   }
 }
 #l-header__menu {
   text-align: right;
-  margin-right: 3rem;
+  margin-right: 0.5rem;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
+  font-size: 1.25rem;
   color: #707070;
   cursor: pointer;
 }
@@ -92,6 +94,7 @@ a:hover img {
   font-style: bold;
   font-weight: 700;
   font-size: 40px;
+  font-size: 2.5rem;
   /* ボックスの高さと同一 */
   color: #707070;
 }
@@ -111,6 +114,8 @@ a:hover img {
   left: 0px;
   top: 2565px;
   background-image: url(../img/footer.png);
+  font-size: 16px;
+  font-size: 1rem;
 }
 .l-footer p {
   width: 225px;
@@ -132,13 +137,26 @@ small.l-footer_copyright {
 }
 
 .l-sidebar__background {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s all ease-in-out;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.502);
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+}
+.l-sidebar__background.background-open {
+  visibility: visible;
+  opacity: 1;
 }
 .l-sidebar__nav {
   position: fixed;
   z-index: 999;
-  margin-top: -225px;
-  width: 328px;
+  margin-top: -282px;
+  width: 300px;
   background-color: rgb(242, 237, 233);
   /*動き*/
   transition: all 0.6s;
@@ -157,6 +175,7 @@ small.l-footer_copyright {
   color: #707070;
   font-style: bold;
   font-size: 24px;
+  font-size: 1.5rem;
   line-height: 100%;
   margin: 60px 0px 40px 46px;
 }
@@ -165,12 +184,12 @@ small.l-footer_copyright {
   font-family: "M+ 1m";
   margin: 20px 102px 20px 66px;
   font-size: 20px;
+  font-size: 1.25rem;
   width: 180px;
 }
 
 .l-sidebar__close {
   display: block;
-  position: relative;
   width: 4px;
   height: 4px;
   top: 19px;
@@ -181,8 +200,8 @@ small.l-footer_copyright {
 .l-sidebar__close::before, .l-sidebar__close::after {
   content: "";
   position: absolute;
-  top: 10%;
-  left: 4px;
+  top: 3.1%;
+  right: 25px;
   width: 4px;
   height: 30px;
   background: #707070;
@@ -221,6 +240,7 @@ h2.c-label {
   font-family: "Roboto";
   font-style: Bold;
   font-size: 38px;
+  font-size: 2.375rem;
   line-height: 48px;
   line-height: 100%;
   align-items: left;
@@ -235,6 +255,7 @@ ul.c-figcaption__title-1 {
   font-family: "mplus-1m-bold";
   font-weight: 700;
   font-size: 22px;
+  font-size: 1.375rem;
   line-height: 24px;
   height: 24px;
   top: 16px;
@@ -253,6 +274,7 @@ ul.c-figcaption__title-1 {
 i.fa-solid {
   position: absolute;
   font-size: 25px;
+  font-size: 1.5625rem;
   top: 39px;
   left: 28px;
   margin: 12px 183px 10px 9px;
@@ -275,6 +297,7 @@ input#sbtn1 {
   font-family: "mplus-1mn-bold";
   color: rgb(112, 112, 112);
   font-size: 16px;
+  font-size: 1rem;
 }
 
 form#form1 {
@@ -283,7 +306,7 @@ form#form1 {
 }
 
 .c-top__caption {
-  background-image: url("../img/mainvisual-pc.jpg");
+  background-image: url("../img/mainvisual-sp.jpg");
   background-size: cover;
   box-sizing: border-box;
   position: absolute;
@@ -297,6 +320,7 @@ h1.c-top__title {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
+  font-size: 2.25rem;
   line-height: 53px;
   color: #FFFFFF;
   margin: 122px 134px 110px 25px;
@@ -363,6 +387,7 @@ h2.p-solution__list__title {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
+  font-size: 1.875rem;
   line-height: 45px;
   /* ボックスの高さと同一 */
   color: #FFFFFF;
@@ -379,6 +404,7 @@ p.p-solution__text {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
+  font-size: 0.875rem;
   line-height: 33px;
   /* または236% */
   color: #FFFFFF;
@@ -413,6 +439,7 @@ p.p-solution__text {
   font-family: "M+ 1m";
   color: rgb(60, 42, 16);
   font-size: 16px;
+  font-size: 1rem;
   margin: 6px 16px 16px 0px;
   position: absolute;
   width: 271px;

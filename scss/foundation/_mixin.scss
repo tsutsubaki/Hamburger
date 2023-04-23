@@ -1,3 +1,4 @@
+@use "sass:math";
 
 @mixin bg-img($path, $size: cover, $pos: center center, $repeat: no-repeat) {
   background-image: url($path);
@@ -16,11 +17,17 @@
   font-family: 'M+ 1m';
 }
 
+@mixin font-size($size, $base: 16) {
+  font-size: $size + px;
+  font-size: math.div($size , $base) + rem;
+}
+
+
 /////レスポンシブ//////
 // マップ型変数を定義
 $breakpoints: (
   'md': 'screen and (min-width: 376px)' ,
-  'lg': 'screen and (min-width: 561px)' ,
+  'lg': 'screen and (min-width: 835px)' ,
 ) !default;
 
 // メディアクエリ用 mixin デフォルトはmd
