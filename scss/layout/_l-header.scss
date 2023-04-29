@@ -27,7 +27,6 @@
   
    
     &__menu{
-    text-align: right;
     margin-right: 0.5rem;
     font-family: 'Roboto';
     font-style: normal;
@@ -35,7 +34,7 @@
     @include g.font-size(20);
     color: #707070;
     cursor: pointer;
-              
+    text-align: right;
     }
 
                  

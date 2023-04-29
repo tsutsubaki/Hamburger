@@ -1,16 +1,16 @@
 @use"../../foundation/global" as g;
 
 .c-search-box{
-    display: inline-block;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
      }
 
 i.fa-solid{
     position: absolute;
     @include g.font-size(25);
-    top: 39px;
-    left: 28px;
-    margin: 12px 183px 10px 9px;
+    margin: 10px 264px 10px 9px;
     }
 
 input {
@@ -21,6 +21,7 @@ input {
     border-radius: 10px 8px 10px 10px;
     width: 216px;
     height: 46px;
+    padding-left: 40px
     
     }
 

@@ -30,7 +30,7 @@ body {
 img,
 video,
 object {
-  width: auto;
+  width: 100%;
   max-width: 100%;
   height: auto;
   border: none;
@@ -67,7 +67,7 @@ a:hover img {
     width: 100%;
   }
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 561px) {
   #l-header {
     background-color: cadetblue;
     font-size: 22px;
@@ -76,7 +76,6 @@ a:hover img {
   }
 }
 #l-header__menu {
-  text-align: right;
   margin-right: 0.5rem;
   font-family: "Roboto";
   font-style: normal;
@@ -85,6 +84,7 @@ a:hover img {
   font-size: 1.25rem;
   color: #707070;
   cursor: pointer;
+  text-align: right;
 }
 #l-header__logo {
   display: flex;
@@ -155,12 +155,11 @@ small.l-footer_copyright {
 .l-sidebar__nav {
   position: fixed;
   z-index: 999;
-  margin-top: -282px;
+  margin-top: -220px;
   width: 300px;
   background-color: rgb(242, 237, 233);
   /*動き*/
   transition: all 0.6s;
-  height: 2716px;
   right: -500px;
 }
 .l-sidebar__nav.active {
@@ -200,8 +199,8 @@ small.l-footer_copyright {
 .l-sidebar__close::before, .l-sidebar__close::after {
   content: "";
   position: absolute;
-  top: 3.1%;
-  right: 25px;
+  top: 1.59%;
+  right: 15px;
   width: 4px;
   height: 30px;
   background: #707070;
@@ -220,14 +219,14 @@ small.l-footer_copyright {
   margin: 0 auto;
 }
 
-div.c-line {
+.c-line {
   border: solid 1px white;
   width: 71px;
   position: absolute;
   top: 100px;
   left: 45px;
 }
-div.c-line__label {
+.c-line__label {
   border: solid 2px rgb(255, 255, 255);
   width: 33.89px;
   position: absolute;
@@ -236,7 +235,7 @@ div.c-line__label {
   left: 15.5px;
 }
 
-h2.c-label {
+.c-label {
   font-family: "Roboto";
   font-style: Bold;
   font-size: 38px;
@@ -250,7 +249,7 @@ h2.c-label {
   height: 48px;
 }
 
-ul.c-figcaption__title-1 {
+.c-figcaption__title-1 {
   color: rgb(60, 42, 16);
   font-family: "mplus-1m-bold";
   font-weight: 700;
@@ -266,18 +265,23 @@ ul.c-figcaption__title-1 {
   align-items: center;
 }
 
+@media screen and (min-width: 376px) {
+  .c-center__caption {
+    display: flex;
+  }
+}
 .c-search-box {
-  display: inline-block;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 i.fa-solid {
   position: absolute;
   font-size: 25px;
   font-size: 1.5625rem;
-  top: 39px;
-  left: 28px;
-  margin: 12px 183px 10px 9px;
+  margin: 10px 264px 10px 9px;
 }
 
 input#sbox1 {
@@ -286,6 +290,7 @@ input#sbox1 {
   border-radius: 10px 8px 10px 10px;
   width: 216px;
   height: 46px;
+  padding-left: 40px;
 }
 input#sbtn1 {
   background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
@@ -306,7 +311,7 @@ form#form1 {
 }
 
 .c-top__caption {
-  background-image: url("../img/mainvisual-sp.jpg");
+  background-image: url("../img/mainvisual-sp@2x.jpg");
   background-size: cover;
   box-sizing: border-box;
   position: absolute;
@@ -315,12 +320,11 @@ form#form1 {
   left: 0px;
 }
 
-h1.c-top__title {
+.c-top__title {
   font-family: "M+ 1m";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  font-size: 2.25rem;
   line-height: 53px;
   color: #FFFFFF;
   margin: 122px 134px 110px 25px;
@@ -345,7 +349,7 @@ figcaption.figcaption-2 {
   top: 1182px;
 }
 
-div.p-solution__list {
+.p-solution__list {
   background-image: url("../img/screen2020-02-10 11.47.42.png");
   box-sizing: border-box;
   position: absolute;
@@ -376,7 +380,7 @@ div.p-solution__list {
   top: 415px;
 }
 
-h2.p-solution__list__title {
+.p-solution__list__title {
   position: absolute;
   z-index: 100;
   width: 240px;
@@ -387,7 +391,6 @@ h2.p-solution__list__title {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
-  font-size: 1.875rem;
   line-height: 45px;
   /* ボックスの高さと同一 */
   color: #FFFFFF;
@@ -404,7 +407,6 @@ p.p-solution__text {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  font-size: 0.875rem;
   line-height: 33px;
   /* または236% */
   color: #FFFFFF;
@@ -439,7 +441,6 @@ p.p-solution__text {
   font-family: "M+ 1m";
   color: rgb(60, 42, 16);
   font-size: 16px;
-  font-size: 1rem;
   margin: 6px 16px 16px 0px;
   position: absolute;
   width: 271px;

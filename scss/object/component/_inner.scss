@@ -5,7 +5,7 @@
 	margin: 0 auto;
 }
 
-div.c-line{
+.c-line{
     border: solid 1px white;
     width: 71px;
     position: absolute;
@@ -24,7 +24,7 @@ div.c-line{
 
 }
 
-h2.c-label{
+.c-label{
     font-family: "Roboto";
     font-style: Bold;
     @include g.font-size(38);
@@ -37,7 +37,7 @@ h2.c-label{
     height: 48px;
 }
  
-ul.c-figcaption__title-1{
+.c-figcaption__title-1{
     color: rgba(60, 42, 16, 1);
     font-family: "mplus-1m-bold";
     font-weight: 700;
@@ -52,3 +52,13 @@ ul.c-figcaption__title-1{
     align-items: center;
 }
 
+@include g.mq(md){
+    .c-center__caption{
+        display: flex;
+    }
+
+    @include g.mq(lg){
+        
+       
+      }
+}
