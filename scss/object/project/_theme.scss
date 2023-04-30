@@ -9,6 +9,15 @@ width: 375px;
 height: 285px;
 left: 0px;
 
+@include g.mq(md){
+    width: 100%;
+    background-image: url("../img/mainvisual-pc@2x.jpg");
+    
+ }
+ @include g.mq(lg){
+        
+      
+     }
 
 }
 

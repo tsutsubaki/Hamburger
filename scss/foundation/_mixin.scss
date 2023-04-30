@@ -27,7 +27,7 @@
 // マップ型変数を定義
 $breakpoints: (
   'md': 'screen and (min-width: 376px)' ,
-  'lg': 'screen and (min-width: 561px)' ,
+  'lg': 'screen and (min-width: 835px)' ,
 ) !default;
 
 // メディアクエリ用 mixin デフォルトはmd
@@ -39,7 +39,7 @@ $breakpoints: (
 
 
 //pxをvwに変換するfunction
-@function _get_vw($size, $viewport: 375) {
+@function _get_vw($size, $viewport) {
   $rate: calc(100 / $viewport);
   @return $rate * $size * 1vw;
 }

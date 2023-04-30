@@ -5,27 +5,55 @@
     display: flex;
     justify-content: center;
     align-items: center;
-     }
 
+    @include g.mq(md){
+   
+        
+        
+     }
+     @include g.mq(lg){
+     }
+    }
 i.fa-solid{
     position: absolute;
     @include g.font-size(25);
     margin: 10px 264px 10px 9px;
+
+    @include g.mq(md){
+       
     }
+}
+/*input {*/
 
-input {
-
-&#sbox1{
+#sbox1{
     background: #FFFFFF;
     border: 1px solid #707070;
     border-radius: 10px 8px 10px 10px;
     width: 216px;
     height: 46px;
-    padding-left: 40px
+    padding-left: 40px;
+
+       
+    @include g.mq(md){
+        width: 47.48vw;
+        max-width: 396px;
+       
+    }
+    @include g.mq(lg){
+           
+         
+        }
     
     }
 
- &#sbtn1{
+    ::placeholder{
+        font-size: medium;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+ #sbtn1{
     background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
     border: 1px solid #707070;
     border-radius: 10px;
@@ -36,8 +64,18 @@ input {
     color: rgba(112, 112, 112, 1);
     @include g.font-size(16);
     
+    @include g.mq(md){
+        width: 136px;
+        
+        
+     }
+     @include g.mq(lg){
+            
+          
+         }
+
        }
-    }
+    
 
     
     form#form1{

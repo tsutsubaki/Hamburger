@@ -58,25 +58,26 @@ a:hover img {
   color: #707070;
   background-color: rgb(255, 247, 239);
   width: 375px;
+  height: 215px;
 }
 @media screen and (min-width: 376px) {
   #l-header {
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod;*/
     font-size: 22px;
     font-size: 1.375rem;
     width: 100%;
   }
 }
-@media screen and (min-width: 561px) {
+@media screen and (min-width: 835px) {
   #l-header {
-    background-color: cadetblue;
+    /*background-color: cadetblue;*/
     font-size: 22px;
     font-size: 1.375rem;
     width: 100%;
   }
 }
 #l-header__menu {
-  margin-right: 0.5rem;
+  margin-right: 7%;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -85,6 +86,14 @@ a:hover img {
   color: #707070;
   cursor: pointer;
   text-align: right;
+  /*@include g.mq(md){
+      margin-right: 4%;
+
+  }
+  @include g.mq(lg){
+      margin-right: 4%;
+
+      }*/
 }
 #l-header__logo {
   display: flex;
@@ -215,7 +224,7 @@ small.l-footer_copyright {
 }
 
 .c-inner {
-  max-width: 100%;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -276,15 +285,14 @@ small.l-footer_copyright {
   justify-content: center;
   align-items: center;
 }
-
 i.fa-solid {
   position: absolute;
   font-size: 25px;
   font-size: 1.5625rem;
   margin: 10px 264px 10px 9px;
 }
-
-input#sbox1 {
+/*input {*/
+#sbox1 {
   background: #FFFFFF;
   border: 1px solid #707070;
   border-radius: 10px 8px 10px 10px;
@@ -292,7 +300,26 @@ input#sbox1 {
   height: 46px;
   padding-left: 40px;
 }
-input#sbtn1 {
+@media screen and (min-width: 376px) {
+  #sbox1 {
+    width: 47.48vw;
+    max-width: 396px;
+  }
+}
+::-moz-placeholder {
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+::placeholder {
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sbtn1 {
   background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
   border: 1px solid #707070;
   border-radius: 10px;
@@ -304,7 +331,11 @@ input#sbtn1 {
   font-size: 16px;
   font-size: 1rem;
 }
-
+@media screen and (min-width: 376px) {
+  #sbtn1 {
+    width: 136px;
+  }
+}
 form#form1 {
   display: flex;
   margin: 40px 0 39px 27px;
@@ -319,7 +350,12 @@ form#form1 {
   height: 285px;
   left: 0px;
 }
-
+@media screen and (min-width: 376px) {
+  .c-top__caption {
+    width: 100%;
+    background-image: url("../img/mainvisual-pc@2x.jpg");
+  }
+}
 .c-top__title {
   font-family: "M+ 1m";
   font-style: normal;
