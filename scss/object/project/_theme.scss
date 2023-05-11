@@ -15,7 +15,7 @@ left: 0px;
     
  }
  @include g.mq(lg){
-        
+    height: 530px;
       
      }
 
@@ -31,26 +31,56 @@ left: 0px;
     margin: 122px 134px 110px 25px; 
     }
 
-figcaption{
+section{
 
 &.figcaption-1{
     background-image: url("../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png");
     box-sizing: border-box;
+    background-repeat: no-repeat;
     position: absolute;
     width: 335px;
     height: 642px;
     left: 20px;
-    top: 520px;
+   
+
+    @include g.mq(md){
+     left:40px;
+     
+        
+     }
+     @include g.mq(lg){
+        background-image: url("../../../img/three-burgers.jpeg"); 
+        width: 625px;
+        height: 1197px;  
+        left: 119px;
+        background-size: 100%; 
+         }
+    
 }
    
 &.figcaption-2{
     background-image: url("../img/poteto.png");
     box-sizing: border-box;
+    background-repeat: no-repeat;
     position: absolute;
     width: 336px;
     height: 643px;
-    left: 19px;
-    top: 1182px;
+    left: 20px;
+    top: 663px;
+
+    @include g.mq(md){
+        top:0;
+        left:418px
+
+    }
+    @include g.mq(lg){
+            background-image: url("../../../img/poteto-pcsize.png"); 
+            background-size: 100%;
+            width: 625px;
+            height: 1197px;
+            left: 816px;
+         
+        }
     }
 
 
@@ -67,6 +97,17 @@ height: 691px;
 left: 0px;
 top: 1874px;
 
+@include g.mq(md){
+    top:1221px;
+    width: 100%;
+    min-width: 834px;
+    height: 415px;
+}
+@include g.mq(lg){
+     top: 1893px  
+     
+    }
+
   
 }
 
@@ -77,8 +118,16 @@ top: 1874px;
     left: 0px;
     background: rgba(0, 0, 0, 1);
     opacity: 53%;
-   
     position: absolute;
+    @include g.mq(md){
+        width: 100%;
+        min-width: 834px;
+        height: 415px;
+    }
+    @include g.mq(lg){
+           
+         
+        }
     }
 
     .p-gray__area__second{
@@ -91,6 +140,14 @@ top: 1874px;
        
         position: absolute;
         top: 415px;
+
+        @include g.mq(md){
+            display: none;
+        }
+        @include g.mq(lg){
+               
+             
+            }
 
     }
 
@@ -127,6 +184,17 @@ top: 1874px;
         /* または236% */
 
         color: #FFFFFF;
+       
+        @include g.mq(md){
+            width: 100%;
+            height: 259px;
+            text-align: center;
+        }
+        @include g.mq(lg){
+               
+             
+            }
+
         }
  
  .p-theme{

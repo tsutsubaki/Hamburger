@@ -77,7 +77,6 @@ a:hover img {
   }
 }
 #l-header__menu {
-  margin-right: 7%;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -86,14 +85,16 @@ a:hover img {
   color: #707070;
   cursor: pointer;
   text-align: right;
-  /*@include g.mq(md){
-      margin-right: 4%;
-
+  margin-right: 3%;
+}
+@media screen and (min-width: 835px) {
+  #l-header__menu {
+    position: absolute;
+    z-index: 9999;
+    font-size: 34px;
+    top: 64px;
+    right: 154px;
   }
-  @include g.mq(lg){
-      margin-right: 4%;
-
-      }*/
 }
 #l-header__logo {
   display: flex;
@@ -104,17 +105,12 @@ a:hover img {
   font-weight: 700;
   font-size: 40px;
   font-size: 2.5rem;
-  /* ボックスの高さと同一 */
   color: #707070;
 }
 
 .l-main {
   display: flex;
 }
-.l-main__content {
-  height: 80%;
-}
-
 .l-footer {
   box-sizing: border-box;
   position: absolute;
@@ -126,6 +122,18 @@ a:hover img {
   font-size: 16px;
   font-size: 1rem;
 }
+@media screen and (min-width: 376px) {
+  .l-footer {
+    top: 1636px;
+    width: 100%;
+    height: 149px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .l-footer {
+    top: 2308px;
+  }
+}
 .l-footer p {
   width: 225px;
   height: 27px;
@@ -135,7 +143,13 @@ a:hover img {
   font-family: "M+ 1m";
   font-weight: 310;
 }
-
+@media screen and (min-width: 376px) {
+  .l-footer p {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
 small.l-footer_copyright {
   display: block;
   margin-top: 70px;
@@ -144,7 +158,12 @@ small.l-footer_copyright {
   color: rgb(255, 255, 255);
   font-weight: 300;
 }
-
+@media screen and (min-width: 376px) {
+  small.l-footer_copyright {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
 .l-sidebar__background {
   opacity: 0;
   visibility: hidden;
@@ -163,20 +182,33 @@ small.l-footer_copyright {
 }
 .l-sidebar__nav {
   position: fixed;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  top: 0;
+  bottom: 0;
   z-index: 999;
-  margin-top: -220px;
   width: 300px;
   background-color: rgb(242, 237, 233);
   /*動き*/
   transition: all 0.6s;
   right: -500px;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+@media screen and (min-width: 835px) {
+  .l-sidebar__nav {
+    /*  right:0px;
+      position: absolute;*/
+    width: 367px;
+    height: 2843px;
+  }
 }
 .l-sidebar__nav.active {
   right: 0;
   transition: all 0.6s;
 }
 .l-sidebar__top-title {
-  margin-top: 178px;
+  margin-top: 214px;
 }
 .l-sidebar__title {
   font-family: "M+ 1m";
@@ -204,11 +236,16 @@ small.l-footer_copyright {
   right: -267px;
   cursor: pointer;
 }
+@media screen and (min-width: 835px) {
+  .l-sidebar__close {
+    display: none;
+  }
+}
 
 .l-sidebar__close::before, .l-sidebar__close::after {
   content: "";
   position: absolute;
-  top: 1.59%;
+  top: 6.59%;
   right: 15px;
   width: 4px;
   height: 30px;
@@ -224,7 +261,6 @@ small.l-footer_copyright {
 }
 
 .c-inner {
-  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -274,13 +310,19 @@ small.l-footer_copyright {
   align-items: center;
 }
 
-@media screen and (min-width: 376px) {
+.c-center__caption {
+  position: relative;
+  margin-top: 323px;
+  margin-right: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 835px) {
   .c-center__caption {
-    display: flex;
+    top: 307px;
   }
 }
+
 .c-search-box {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,6 +398,12 @@ form#form1 {
     background-image: url("../img/mainvisual-pc@2x.jpg");
   }
 }
+@media screen and (min-width: 835px) {
+  .c-top__caption {
+    height: 530px;
+  }
+}
+
 .c-top__title {
   font-family: "M+ 1m";
   font-style: normal;
@@ -366,23 +414,53 @@ form#form1 {
   margin: 122px 134px 110px 25px;
 }
 
-figcaption.figcaption-1 {
+section.figcaption-1 {
   background-image: url("../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png");
   box-sizing: border-box;
+  background-repeat: no-repeat;
   position: absolute;
   width: 335px;
   height: 642px;
   left: 20px;
-  top: 520px;
 }
-figcaption.figcaption-2 {
+@media screen and (min-width: 376px) {
+  section.figcaption-1 {
+    left: 40px;
+  }
+}
+@media screen and (min-width: 835px) {
+  section.figcaption-1 {
+    background-image: url("../../../img/three-burgers.jpeg");
+    width: 625px;
+    height: 1197px;
+    left: 119px;
+    background-size: 100%;
+  }
+}
+section.figcaption-2 {
   background-image: url("../img/poteto.png");
   box-sizing: border-box;
+  background-repeat: no-repeat;
   position: absolute;
   width: 336px;
   height: 643px;
-  left: 19px;
-  top: 1182px;
+  left: 20px;
+  top: 663px;
+}
+@media screen and (min-width: 376px) {
+  section.figcaption-2 {
+    top: 0;
+    left: 418px;
+  }
+}
+@media screen and (min-width: 835px) {
+  section.figcaption-2 {
+    background-image: url("../../../img/poteto-pcsize.png");
+    background-size: 100%;
+    width: 625px;
+    height: 1197px;
+    left: 816px;
+  }
 }
 
 .p-solution__list {
@@ -394,6 +472,19 @@ figcaption.figcaption-2 {
   left: 0px;
   top: 1874px;
 }
+@media screen and (min-width: 376px) {
+  .p-solution__list {
+    top: 1221px;
+    width: 100%;
+    min-width: 834px;
+    height: 415px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .p-solution__list {
+    top: 1893px;
+  }
+}
 
 .p-gray__area {
   box-sizing: border-box;
@@ -404,7 +495,13 @@ figcaption.figcaption-2 {
   opacity: 53%;
   position: absolute;
 }
-
+@media screen and (min-width: 376px) {
+  .p-gray__area {
+    width: 100%;
+    min-width: 834px;
+    height: 415px;
+  }
+}
 .p-gray__area__second {
   box-sizing: border-box;
   width: 375px;
@@ -415,7 +512,11 @@ figcaption.figcaption-2 {
   position: absolute;
   top: 415px;
 }
-
+@media screen and (min-width: 376px) {
+  .p-gray__area__second {
+    display: none;
+  }
+}
 .p-solution__list__title {
   position: absolute;
   z-index: 100;
@@ -447,7 +548,13 @@ p.p-solution__text {
   /* または236% */
   color: #FFFFFF;
 }
-
+@media screen and (min-width: 376px) {
+  p.p-solution__text {
+    width: 100%;
+    height: 259px;
+    text-align: center;
+  }
+}
 .p-theme {
   position: absolute;
   margin-top: -350px;

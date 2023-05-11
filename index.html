@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ja">
 <head>
   <title>Hamburger</title>
@@ -27,126 +27,129 @@ jquery.min.js">
 </head>
 
 <body>
-<div class="c-inner">
+  <div class="wrapper">
+  <!--サイドメニュー-->
+<aside class="l-sidebar__area">
+  <div class="l-sidebar__background"></div><!--background-color-->
+    
+  
+  <div class="l-sidebar__nav">
+    
+    <!--sidebar　✖️　-->
+    <span class="l-sidebar__close "></span>
+   
+  <div class="l-sidebar__top-title">
+    <div class="l-sidebar__title">
+    <a href="#">バーガー</a>
+  </div>
+  
+    
+  <ul>
+    <li class="l-sidebar__item"><a href="#">ハンバーガー</a></li>
+    <li class="l-sidebar__item"><a href="#">チーズバーガー</a></li>
+    <li class="l-sidebar__item"><a href="#">テリヤキバーガー</a></li>
+    <li class="l-sidebar__item"><a href="#">アボガドバーガー</a></li>
+     <li class="l-sidebar__item"><a href="#">フィッシュバーガー</a></li>
+     <li class="l-sidebar__item"><a href="#">ベーコンバーガー</a></li>
+     <li class="l-sidebar__item"><a href="#">チキンバーガー</a></li>
+   
+  </ul>
+  </div><!--l-sidebar__top-title-->
+  
+  <div class="l-sidebar__title">
+    <a href="">サイド</a>
+  </div>
+  
+    <ul>
+      <li class="l-sidebar__item"><a href="#">ポテト</a></li>
+     <li class="l-sidebar__item"><a href="#">サラダ</a></li>
+     <li class="l-sidebar__item"><a href="#">ナゲット</a></li>
+     <li class="l-sidebar__item"><a href="#">コーン</a></li>
+      </ul>
+  
+      <div class="l-sidebar__title">
+        <a href="">ドリンク</a>
+    </div>
+  
+      <ul>
+        <li class="l-sidebar__item"><a href="#">コーラ</a></li>
+        <li class="l-sidebar__item"><a href="#">ファンタ</a></li>
+        <li class="l-sidebar__item"><a href="#">オレンジ</a></li>
+        <li class="l-sidebar__item"><a href="#">アップル</a></li>
+        <li class="l-sidebar__item"><a href="#">紅茶(Ice/Hot)</a></li>
+        <li class="l-sidebar__item"><a href="#">コーヒー(Ice/Hot)</a></li>
+        </ul>
+  
+  </div><!--l-side__nav-->
+  
+  
+  </aside><!--l-sidebar__area-->
+  <!---サイドメニュー-->
+
+<main class="c-main">
 <header id="l-header">
 
   <!--Menuから✖️-->
    <div id="l-header__content">
-    <div id="l-header__menu">Menu</div>
+  <div id="l-header__menu">Menu</div>
      <div id ="l-header__logo"> Hamburger</div>
    </div><!--l-header__content-->
   
 <!-- ヘッダー検索ボタン -->
 <div class="c-search-box">
-<form id="form1" action="">
-    <input id="sbox1"  id="s" name="s" type="text" placeholder="チーズバーガー" />
-    <input id="sbtn1" type="submit" value="検索" />
-    </form>
-
+<form id="form1" class="c-form">
+    <input id="sbox1"  name="s" type="text" placeholder="チーズバーガー">
+    <input id="sbtn1" type="submit" value="検索">
+  
   <i class="fa-solid fa-magnifying-glass"></i>
+</form>
 </div><!--c-search-box-->
 
-<!--サイドメニュー-->
-<div class="l-sidebar__area">
-<div class="l-sidebar__background"></div><!--background-color-->
-  
 
-<div class="l-sidebar__nav">
-
-  <!--sidebar　✖️　-->
-  <span class="l-sidebar__close "></span>
- 
-<div class="l-sidebar__top-title">
-  <div class="l-sidebar__title">
-  <a href="#">バーガー</a>
-</div>
-
-  
-<ul>
-  <li class="l-sidebar__item"><a href="#">ハンバーガー</a></li>
-  <li class="l-sidebar__item"><a href="#">チーズバーガー</a></li>
-  <li class="l-sidebar__item"><a href="#">テリヤキバーガー</a></li>
-  <li class="l-sidebar__item"><a href="#">アボガドバーガー</a></li>
-   <li class="l-sidebar__item"><a href="#">フィッシュバーガー</a></li>
-   <li class="l-sidebar__item"><a href="#">ベーコンバーガー</a></li>
-   <li class="l-sidebar__item"><a href="#">チキンバーガー</a></li>
- 
-</ul>
-</div><!--l-sidebar__top-title-->
-
-<div class="l-sidebar__title">
-  <a href="">サイド</a>
-</div>
-
-  <ul>
-    <li class="l-sidebar__item"><a href="#">ポテト</a></li>
-   <li class="l-sidebar__item"><a href="#">サラダ</a></li>
-   <li class="l-sidebar__item"><a href="#">ナゲット</a></li>
-   <li class="l-sidebar__item"><a href="#">コーン</a></li>
-    </ul>
-
-    <div class="l-sidebar__title">
-      <a href="">ドリンク</a>
-  </div>
-
-    <ul>
-      <li class="l-sidebar__item"><a href="#">コーラ</a></li>
-      <li class="l-sidebar__item"><a href="#">ファンタ</a></li>
-      <li class="l-sidebar__item"><a href="#">オレンジ</a></li>
-      <li class="l-sidebar__item"><a href="#">アップル</a></li>
-      <li class="l-sidebar__item"><a href="#">紅茶(Ice/Hot)</a></li>
-      <li class="l-sidebar__item"><a href="#">コーヒー(Ice/Hot)</a></li>
-      </ul>
-
-</div><!--l-side__nav-->
-
-
-</div><!--l-sidebar__area-->
-<!---サイドメニュー-->
 </header>
 
- <main class="l-main">
+ <div class="l-main">
  <div class="l-main__content">
 <div class="c-top__caption">
-  <h1 class="c-top__title" >ダミーサイト</h1>
+  <h1 class="c-top__title">ダミーサイト</h1>
 </div>
 
 <div class="c-center__caption">
-<figcaption class="figcaption-1">
+<section class="figcaption-1">
   <h2 class="c-label">Take Out</h2>
   <div class="c-line__label"></div>
 
 
 <div class="c-item">
    <div class="p-theme">
-  <ul class="c-figcaption__title-1">Take OUT</ul>
-   <li class="p-theme__service">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</li>
+  <div class="c-figcaption__title-1">Take OUT</div>
+   <div class="p-theme__service">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</div>
   </div><!--p-theme-->
 
   <div class="p-theme__theme">
-    <ul class="c-figcaption__title-1">Take OUT</ul>
-     <li class="p-theme__service">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</li>
+    <div class="c-figcaption__title-1">Take OUT</div>
+     <div class="p-theme__service">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</div>
     </div><!--p-theme_2-->
   </div><!--c-item-->
- </figcaption>
+ </section>
 
 
- <figcaption class="figcaption-2">
+ <section class="figcaption-2">
   <h2 class="c-label">Eat In</h2>
   <div class="c-line__label"></div>
 
   <div class="c-item">
   <div class="p-theme">
- <ul class="c-figcaption__title-1">Eat In</ul>
-  <li class="p-theme__service">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</li>
+ <div class="c-figcaption__title-1">Eat In</div>
+  <div class="p-theme__service">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</div>
  </div><!--p-theme-->
  <div class="p-theme__theme">
-  <ul class="c-figcaption__title-1">Eat In</ul>
-   <li class="p-theme__service">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</li>
+  <div class="c-figcaption__title-1">Eat In</div>
+   <div class="p-theme__service">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</div>
   </div><!--p-theme_2-->
 </div><!--c-item-->
-</figcaption>
-</div><!---->
+</section>
+</div><!--c-center__caption-->
 
 
 
@@ -157,11 +160,11 @@ jquery.min.js">
   <div class="c-line"></div>
 
   <div class="p-gray__area__second"></div>
-   <p class="p-solution__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入りま</p>
+   <p class="p-solution__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
 </div><!--p-solution__list-->
 </div><!--l-main__content"-->
 
-  </main>
+ </div><!--main-->
 
   <div class="l-main-hide-contents"></div>
 
@@ -183,6 +186,7 @@ jquery.min.js">
   crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="scss/js/script.js"></script>
-</div>
+  </main>
+</div><!--wrapper-->
  </body>
 </html>

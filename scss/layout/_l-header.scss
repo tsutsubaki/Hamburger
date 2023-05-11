@@ -23,12 +23,12 @@
           //font-size: g.$link-font-size + 8px;
           @include g.font-size(22);
           width: 100%;
-         
+          
         }
   
    
     &__menu{
-    margin-right: 7%;
+   
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -36,18 +36,19 @@
     color: #707070;
     cursor: pointer;
     text-align: right;
+    margin-right: 3%;
 
-    /*@include g.mq(md){
-        margin-right: 4%;
-        
-    }
+   
     @include g.mq(lg){
-        margin-right: 4%;
-         
-        }*/
+        position: absolute;
+        z-index: 9999;
+        font-size: 34px;
+        top: 64px;
+        right: 154px;
+       
     }
-
-                 
+    
+}      
     &__logo{
     display: flex;
     justify-content: center;
@@ -56,19 +57,16 @@
     font-style: bold;
     font-weight: 700;
     @include g.font-size(40);
+     color: #707070;
     
-  
-/* ボックスの高さと同一 */
-    color: #707070;
-    }
 }
-
+    }
 
 
 .l-main{
     display: flex;
 
     &__content{
-     height: 80%;
+     
     }
 }

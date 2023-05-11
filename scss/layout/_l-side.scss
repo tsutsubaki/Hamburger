@@ -22,26 +22,43 @@
     }
   }
 
-  &__nav {
+  &__nav{
   position: fixed;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  top: 0;
+  bottom: 0;
   z-index: 999;
-  margin-top:-220px;
   width:300px;
   background-color: rgba(242, 237, 233, 1);
   /*動き*/
   transition: all 0.6s;   
   right: -500px;
+  @include g.font-size(22);
 
+  @include g.mq(md){
+       
+  }
+
+  @include g.mq(lg){
+    /*  right:0px;
+      position: absolute;*/
+      width: 367px;
+      height: 2843px;
+         
+    }
+
+          
     &.active{
       right: 0;
       transition: all 0.6s;   
+  
     }
   
-
   }
-
-&__top-title{
-  margin-top: 178px;
+  
+  &__top-title{
+  margin-top: 214px;
 }
 
 &__title{
@@ -64,10 +81,8 @@
      }
 
      
-
     }
-
-
+    
 
 
 //バツ
@@ -79,12 +94,16 @@
   top: 19px;
   right: -267px;
   cursor: pointer;
+
+  @include g.mq(lg){
+    display: none;
+  }
   
 }
 .l-sidebar__close::before, .l-sidebar__close::after{
   content: "";
   position: absolute;
-  top: 1.59%;
+  top: 6.59%;
   right:15px;
   width: 4px;
   height: 30px;
@@ -97,6 +116,4 @@
   transform: translate(-50%,-50%) rotate(-45deg);
 }
 
-
-
-    
+ 

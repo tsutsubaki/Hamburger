@@ -1,7 +1,6 @@
 @use"../../foundation/global" as g;
 
 .c-search-box{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +36,7 @@ i.fa-solid{
     @include g.mq(md){
         width: 47.48vw;
         max-width: 396px;
+        
        
     }
     @include g.mq(lg){
@@ -83,4 +83,4 @@ i.fa-solid{
         margin: 40px 0 39px 27px;
     }
 
- 
+    
