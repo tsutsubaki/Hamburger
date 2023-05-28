@@ -1,0 +1,64 @@
+@use '../foundation/global' as g;
+
+.button{
+    cursor: pointer;
+}
+
+.c-center__caption {
+    @include g.mq(md){
+    display: flex;
+}
+}
+
+.figcaption{
+    position: relative;
+    margin: 5vw;
+    padding: 4vw;
+    background-size: cover;
+    height: auto;
+    
+    @include g.mq(md){
+        margin: 4vw;
+        padding: 2vw;       
+        }
+
+      @include g.mq(lg){
+          
+}
+}
+
+
+.l-theme{         
+        
+    font-family: g.$main-font;
+    @include g.main-area;
+   
+ 
+
+&__theme{
+    
+    @include g.main-area;
+}
+        
+&__service{
+list-style: none;
+font-family: 'M+ 1m';
+color: g.$color-c-figcaption__title;
+font-size: 16px;
+
+@include g.mq(md){ 
+font-size: 0.9rem;
+}
+}
+
+}
+
+.l-item{
+    @include g.mq(md){
+    
+    height: 156px;
+    padding: 1.366667vw;
+    min-width: 36.16vw;
+    }
+
+}

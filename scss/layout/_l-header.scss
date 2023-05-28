@@ -1,52 +1,52 @@
 @use '../foundation/global' as g;
 
 #l-header{
-   font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-   /* ボックスの高さと同一 */
-    color: #707070;
-    background-color: rgba(255, 247, 239, 1);
-    width: 375px;
-    height: 215px;
+position: relative;
+width: 100%;
+font-family: 'Roboto';
+color: #707070;
+background-color: rgba(255, 247, 239, 1);
+height: 215px;
        
     @include g.mq(md){
-       /* background-color: darkgoldenrod;*/
-        //font-size: g.$link-font-size + 2px;
         @include g.font-size(22);
-        width: 100%;
-       
         
+               
     }
     @include g.mq(lg){
-          /*background-color: cadetblue;*/
-          //font-size: g.$link-font-size + 8px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
           @include g.font-size(22);
-          width: 100%;
+          height: auto;
           
         }
   
+    &__content{
+        padding-top: 30px;
+    }
    
     &__menu{
    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    @include g.font-size(20);
+    @include g.font-size(34);
     color: #707070;
-    cursor: pointer;
-    text-align: right;
-    margin-right: 3%;
+    position: absolute;
+    right: 3.133333vw;
+    margin-top: -25px;
+    
 
    
-    @include g.mq(lg){
-        position: absolute;
-        z-index: 9999;
-        font-size: 34px;
-        top: 64px;
-        right: 154px;
+    @include g.mq(md){
+       
        
     }
+    @include g.mq(lg){
+        
+         
+       }
     
 }      
     &__logo{
@@ -59,12 +59,16 @@
     @include g.font-size(40);
      color: #707070;
     
+     @include g.mq(lg){
+      
+         
+       }
 }
     }
 
 
 .l-main{
-    display: flex;
+    
 
     &__content{
      

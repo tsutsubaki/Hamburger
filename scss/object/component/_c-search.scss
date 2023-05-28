@@ -1,4 +1,4 @@
-@use"../../foundation/global" as g;
+@use "../../foundation/global" as g;
 
 .c-search-box{
     display: flex;
@@ -11,6 +11,7 @@
         
      }
      @include g.mq(lg){
+        margin-right: 31px;
      }
     }
 i.fa-solid{
@@ -82,5 +83,3 @@ i.fa-solid{
         display: flex;
         margin: 40px 0 39px 27px;
     }
-
-    

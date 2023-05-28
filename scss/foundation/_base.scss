@@ -29,7 +29,7 @@ body{
     font-size: 1.6rem;
     max-width: auto;
      overflow-x: hidden;
-    
+     font-family: 'M+ 1m', sans-serif;
      }
 
 img,
@@ -58,4 +58,10 @@ a:hover img{
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+body.fixed {
+    width: 100%;
+    height: 100%;
+    position: fixed;
 }

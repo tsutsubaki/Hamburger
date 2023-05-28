@@ -9,11 +9,10 @@
 
 @mixin main-area{
   background-color: rgba(255, 255, 255, 0.8);;
-  width: 303px;
   height: 156px;
   opacity: 1.0;
-  padding-top: 16px;
-  padding-left: 16px;
+  margin-top: 4.2666666667vw;
+  padding: 4.2666666667vw;
   font-family: 'M+ 1m';
 }
 
@@ -23,11 +22,12 @@
 }
 
 
+
 /////レスポンシブ//////
 // マップ型変数を定義
 $breakpoints: (
-  'md': 'screen and (min-width: 376px)' ,
-  'lg': 'screen and (min-width: 835px)' ,
+  'md': 'screen and (min-width: 600px)' ,
+  'lg': 'screen and (min-width: 1025px)' ,
 ) !default;
 
 // メディアクエリ用 mixin デフォルトはmd
