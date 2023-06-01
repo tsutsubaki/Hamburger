@@ -21,6 +21,8 @@
     font-family: "mplus-1m-bold";
     font-weight: 700;
     @include g.font-size(22);
+    margin-bottom: 7px;
+    margin-top: -11px;
 
     @include g.mq(md){   
 

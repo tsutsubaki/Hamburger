@@ -5,8 +5,12 @@
  
  background-image: url(../img/footer.png);
  @include g.font-size(16);
+position: relative;
+height: 40vw;
+text-align: center;
 
  @include g.mq(md){
+   height: 17.86570743405276vw;
   
 }
 @include g.mq(lg){
@@ -17,12 +21,16 @@
  p{
    
     color: rgba(255, 255, 255, 1);
-    
     font-family: 'M+ 1m';
-    font-weight: 310;
+    font-weight: 400;
+    font-size: 4.8vw;
+    line-height: 15.128vw;
+    margin-bottom: 12.666667vw;
 
     @include g.mq(md){
-      
+      font-size: 2.3980815347721824vw;
+      line-height: 11.561151vw;
+      margin-bottom: 0;
       
    }
    @include g.mq(lg){
@@ -39,8 +47,11 @@ small.l-footer_copyright{
     font-family: 'M+ 1m';
     color: rgba(255, 255, 255, 1);
     font-weight:300;
+    font-size: 3.733333333333334vw;
+    width: 100%;
 
     @include g.mq(md){
+      font-size: 1.6786570743405276vw;
      
    }
    @include g.mq(lg){

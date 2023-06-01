@@ -25,10 +25,19 @@
     font-family: 'M+ 1m';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 9vw;
     color: #FFFFFF; 
     position: absolute;
-    margin: 122px 134px 110px 25px;
+    top: 26.628297vw;
+    left: 10.3117505995vw;
+    letter-spacing: 0.2398081535vw;
+
+    @include g.mq(md){
+        top: 17%;
+        left: 10.3117505995vw;
+        font-size: 6vw;
+        
+         }
     
     
     
@@ -46,8 +55,7 @@ section{
 
      @include g.mq(lg){
         background-image: url("../../../img/three-burgers.jpeg"); 
-     
-       
+               
          }
     
 }
@@ -71,10 +79,16 @@ section{
 background-image: url(../../../img/screen2020-02-10\ 11.47.42.png);
 margin-top: 50px;
 position: relative;
+padding: 6vw 10.6666666667vw 10.6666vw 10.6666666667vw  ;
+padding-top: 6vw;
+
 
 @include g.mq(md){
-    
+    margin-top: 0px;
+    height: 49.76019184652279vw;
+    padding: 6vw 4.666667vw;
 }
+
 @include g.mq(lg){
     
     }
@@ -87,7 +101,9 @@ position: relative;
     opacity: 53%;
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: 60%;
+    top: 0;
+    left: 0;
 
     @include g.mq(md){
      height: 100%;  
@@ -99,16 +115,16 @@ position: relative;
         }
     }
 
-    .p-gray__area__second{
-        
-       
+    .p-gray__area__second{           
      
         background: #000000;
         opacity: 40%;
-       
-     
-        
-
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        right: 0;
+        top: 60%;
+           
         @include g.mq(md){
             display: none;
 
@@ -123,16 +139,22 @@ position: relative;
 
     .p-solution__list__title{
         font-weight: 700;                      
-        color: #FFFFFF; 
+        color:rgba(255, 255, 255, 1); 
         position: absolute;   
         font-size: 7.4666666667vw;  
+
+        @include g.mq(md){
+            font-size: 3.597122302158273vw;
+                     
+        }
+        @include g.mq(lg){
+               
+             
+            }
     }
 
 
-    .p-solution__text{
-             
-        
-
+    .p-solution__text{       
         color: #FFFFFF;
        
         @include g.mq(md){
@@ -157,4 +179,8 @@ position: relative;
  }
 
  
-
+ .p-last__title {
+    @include g.mq(md){      
+       top: 13.5vw;  
+    }
+ }

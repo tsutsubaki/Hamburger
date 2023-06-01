@@ -4,3 +4,17 @@
     align-items: center;
     display: flex;
 }
+
+.c-text{
+    position: relative;
+    margin: 18.333333333333332vw auto;
+    line-height: 8.8vw;
+
+    @include g.mq(md){
+    margin: 10vw auto;
+    line-height: 3.9568345323741005vw;
+    font-size: 1.6786570743405276vw;
+    font-weight: bold;
+    }
+
+}

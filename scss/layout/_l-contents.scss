@@ -23,6 +23,7 @@
         }
 
       @include g.mq(lg){
+        width: 32.5520833333vw;
           
 }
 }
@@ -32,6 +33,12 @@
         
     font-family: g.$main-font;
     @include g.main-area;
+
+    @include g.mq(md){
+    
+        height: 156px;
+        min-width: 36.16vw;
+        }
    
  
 
@@ -53,12 +60,8 @@ font-size: 0.9rem;
 
 }
 
-.l-item{
-    @include g.mq(md){
-    
-    height: 156px;
-    padding: 1.366667vw;
-    min-width: 36.16vw;
-    }
-
+.l-item {
+    @include g.mq(md){   
+     padding: 2.666666666666667vw ;
+}
 }
