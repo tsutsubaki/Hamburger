@@ -67,7 +67,8 @@ height: 215px;
      color: #707070;
     
      @include g.mq(lg){
-      
+        margin-left: 4.185447520927238vw;
+        font-size: 4rem;
          
        }
 }

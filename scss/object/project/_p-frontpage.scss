@@ -39,7 +39,9 @@
         font-size: 6vw;
         
          }
-    
+         @include g.mq(lg){
+            font-size: 2.5rem;
+         }
     
     
     }

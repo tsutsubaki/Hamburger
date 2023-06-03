@@ -61,5 +61,6 @@ font-size: 0.9rem;
 .l-item {
     @include g.mq(md){   
      padding: 2.666666666666667vw ;
+     height: 100%;
 }
 }

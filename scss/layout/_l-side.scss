@@ -1,5 +1,17 @@
 
 @use '../foundation/global' as g;
+main{
+
+  @include g.mq(lg){
+ flex: 3;  
+  }
+}
+
+aside{
+  @include g.mq(lg){
+  flex: 1;
+}
+}
 
 .l-sidebar{
 
