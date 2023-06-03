@@ -18,7 +18,6 @@
     height: auto;
     
     @include g.mq(md){
-        margin: 4vw;
         padding: 2vw;       
         }
 
@@ -37,8 +36,7 @@
     @include g.mq(md){
     
         height: 156px;
-        min-width: 36.16vw;
-        }
+               }
    
  
 

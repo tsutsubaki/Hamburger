@@ -18,12 +18,19 @@ height: 215px;
          justify-content: space-between;
          align-items: center;
           @include g.font-size(22);
-          height: auto;
+          height: 13.972955569864778vw;
           
         }
   
     &__content{
         padding-top: 30px;
+
+        @include g.mq(lg){
+            padding-top: 0px;
+             
+           }
+
+
     }
    
     &__menu{
@@ -44,7 +51,7 @@ height: 215px;
        
     }
     @include g.mq(lg){
-        
+        display: none;
          
        }
     

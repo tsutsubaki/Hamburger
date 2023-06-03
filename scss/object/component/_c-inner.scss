@@ -5,6 +5,12 @@
     display: flex;
 }
 
+main{
+    @include g.mq(lg){   
+        
+    }
+    }
+
 .c-text{
     position: relative;
     margin: 18.333333333333332vw auto;

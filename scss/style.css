@@ -76,7 +76,6 @@ body.fixed {
 }
 @media screen and (min-width: 600px) {
   .figcaption {
-    margin: 4vw;
     padding: 2vw;
   }
 }
@@ -98,7 +97,6 @@ body.fixed {
 @media screen and (min-width: 600px) {
   .l-theme {
     height: 156px;
-    min-width: 36.16vw;
   }
 }
 .l-theme__theme {
@@ -148,11 +146,16 @@ body.fixed {
     align-items: center;
     font-size: 22px;
     font-size: 1.375rem;
-    height: auto;
+    height: 13.9729555699vw;
   }
 }
 #l-header__content {
   padding-top: 30px;
+}
+@media screen and (min-width: 1025px) {
+  #l-header__content {
+    padding-top: 0px;
+  }
 }
 #l-header__menu {
   font-family: "Roboto";
@@ -164,6 +167,11 @@ body.fixed {
   position: absolute;
   right: 3.133333vw;
   margin-top: -25px;
+}
+@media screen and (min-width: 1025px) {
+  #l-header__menu {
+    display: none;
+  }
 }
 #l-header__logo {
   display: flex;
@@ -238,8 +246,8 @@ small.l-footer_copyright {
   -webkit-overflow-scrolling: touch;
   top: 0;
   bottom: 0;
-  z-index: 999;
   width: 300px;
+  z-index: 999;
   background-color: rgb(242, 237, 233);
   /*動き*/
   transition: all 0.6s;
@@ -247,12 +255,15 @@ small.l-footer_copyright {
   font-size: 22px;
   font-size: 1.375rem;
 }
+@media screen and (min-width: 600px) {
+  .l-sidebar__nav {
+    width: unset;
+  }
+}
 @media screen and (min-width: 1025px) {
   .l-sidebar__nav {
     position: static;
-    width: 100%;
-    max-width: 367px;
-    height: 183.0650354153vw;
+    height: auto;
     right: 0;
     transition: none;
   }
@@ -311,6 +322,20 @@ small.l-footer_copyright {
 
 .l-sidebar__close::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.l-sidebar__menu {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .l-sidebar__menu {
+    display: block;
+    width: 87px;
+    height: 40px;
+    margin: 79px 234px -116px 46px;
+    font-family: Roboto;
+    color: rgb(112, 112, 112);
+  }
 }
 
 .c-inner {
@@ -425,12 +450,13 @@ i.fa-solid {
 }
 @media screen and (min-width: 600px) {
   #sbtn1 {
+    max-width: 22.6666666667vw;
     width: 136px;
   }
 }
 form#form1 {
   display: flex;
-  margin: 40px 0 39px 27px;
+  margin: 2.5756600129vw 0 2.5112685126vw 1.7385705087vw;
 }
 
 .inner {
@@ -466,6 +492,13 @@ form#form1 {
     background-size: cover;
   }
 }
+@media screen and (min-width: 1025px) {
+  .c-top__caption {
+    background-image: url(../../../img/pc-top.jpg);
+    height: 34.1274951706vw;
+  }
+}
+
 .c-top__title {
   font-family: "M+ 1m";
   font-style: normal;
@@ -511,7 +544,6 @@ section.figcaption-2 {
 @media screen and (min-width: 600px) {
   .p-solution__list {
     margin-top: 0px;
-    height: 49.7601918465vw;
     padding: 6vw 4.666667vw;
   }
 }

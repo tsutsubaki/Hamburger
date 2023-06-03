@@ -66,8 +66,8 @@ i.fa-solid{
     @include g.font-size(16);
     
     @include g.mq(md){
+        max-width: 22.666666666666664vw;
         width: 136px;
-        
         
      }
      @include g.mq(lg){
@@ -81,5 +81,5 @@ i.fa-solid{
     
     form#form1{
         display: flex;
-        margin: 40px 0 39px 27px;
+       margin: 2.5756600128783vw 0 2.5112685125563425vw 1.7385705086928525vw;
     }
