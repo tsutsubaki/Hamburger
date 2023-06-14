@@ -14,7 +14,7 @@ text-align: center;
   
 }
 @include g.mq(lg){
-     
+   height: 10vw;
     
    }
 
@@ -34,7 +34,8 @@ text-align: center;
       
    }
    @include g.mq(lg){
-         
+      font-size: 1.0vw;
+      line-height: 5.561151vw;
        
       }
  }
@@ -55,7 +56,7 @@ small.l-footer_copyright{
      
    }
    @include g.mq(lg){
-         
+      font-size: 0.678657vw;
        
       }
    }

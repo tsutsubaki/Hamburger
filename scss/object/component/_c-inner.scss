@@ -5,7 +5,7 @@
     display: flex;
 }
 
-main{
+.c-main{
     @include g.mq(lg){   
         
     }
@@ -14,13 +14,20 @@ main{
 .c-text{
     position: relative;
     margin: 18.333333333333332vw auto;
-    line-height: 8.8vw;
+    line-height: 7.5vw;
+    font-size: 18px;
 
     @include g.mq(md){
-    margin: 10vw auto;
+    margin: 10vw auto 0;
     line-height: 3.9568345323741005vw;
     font-size: 1.6786570743405276vw;
     font-weight: bold;
     }
-
+    @include g.mq(lg){   
+        font-size: 1.0vw; 
+        margin: 9vw 2.9vw;
+        line-height: 1.956835vw;
+        width: 697px;
+;
+    }
 }

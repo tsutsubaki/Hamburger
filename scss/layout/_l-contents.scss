@@ -43,6 +43,11 @@
 &__theme{
     
     @include g.main-area;
+
+    @include g.mq(md){
+        margin-top: 2.266667vw;
+
+}
 }
         
 &__service{
@@ -53,6 +58,12 @@ font-size: 16px;
 
 @include g.mq(md){ 
 font-size: 0.9rem;
+}
+@include g.mq(lg){
+   margin: 0 -1vw;
+   font-size: 0.9vw;
+   line-height: 1.3vw;
+      
 }
 }
 

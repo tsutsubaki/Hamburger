@@ -34,13 +34,14 @@
     letter-spacing: 0.2398081535vw;
 
     @include g.mq(md){
-        top: 17%;
+        top: 33%;
         left: 10.3117505995vw;
-        font-size: 6vw;
+        font-size: 4.316546762589928vw;
         
          }
          @include g.mq(lg){
             font-size: 2.5rem;
+            left: 4.311751vw;
          }
     
     
@@ -112,7 +113,7 @@ padding-top: 6vw;
         
     }
     @include g.mq(lg){
-           
+          width: 60%; 
          
         }
     }
@@ -133,7 +134,11 @@ padding-top: 6vw;
         }
 
         @include g.mq(lg){
-               
+            display: block;
+            height: 100%;
+            top: 0;
+            right: 0vw;
+            width: 40%;
              
             }
 
@@ -150,7 +155,7 @@ padding-top: 6vw;
                      
         }
         @include g.mq(lg){
-               
+            font-size: 1.597122vw;  
              
             }
     }
@@ -175,7 +180,7 @@ padding-top: 6vw;
     margin-top: 58.6666vw;
 
     @include g.mq(md){         
-      margin-top: 25.6666vw;
+      margin-top: 28.6666vw;
     }
 
  }
@@ -185,4 +190,9 @@ padding-top: 6vw;
     @include g.mq(md){      
        top: 13.5vw;  
     }
- }
+    @include g.mq(lg){         
+               
+    top: 10.5vw;
+    width: 4vw;                          
+    }
+}

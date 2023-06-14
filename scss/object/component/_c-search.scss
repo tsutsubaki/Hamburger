@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 21px;
 
     @include g.mq(md){
    
@@ -11,7 +12,7 @@
         
      }
      @include g.mq(lg){
-        margin-right: 31px;
+        margin-top: 0px;
      }
     }
 i.fa-solid{
@@ -35,13 +36,11 @@ i.fa-solid{
 
        
     @include g.mq(md){
-        width: 47.48vw;
-        max-width: 396px;
-        
-       
+        width: 47.4820143885vw;
+           
     }
     @include g.mq(lg){
-           
+        width: 20.625vw;
          
         }
     
@@ -66,12 +65,12 @@ i.fa-solid{
     @include g.font-size(16);
     
     @include g.mq(md){
-        max-width: 22.666666666666664vw;
-        width: 136px;
+        width: auto;
+        min-width: 136px;
         
      }
      @include g.mq(lg){
-            
+        
           
          }
 
@@ -82,4 +81,8 @@ i.fa-solid{
     form#form1{
         display: flex;
        margin: 2.5756600128783vw 0 2.5112685125563425vw 1.7385705086928525vw;
+       
+       @include g.mq(lg){
+        margin:0 40px 0 0;
+       }
     }
