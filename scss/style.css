@@ -85,14 +85,14 @@ body.fixed {
 }
 @media screen and (min-width: 1025px) {
   .figcaption {
-    width: 32.5520833333vw;
+    width: 60.9756097561vw;
+    margin-top: 7rem;
   }
 }
 
 .l-theme {
   font-family: url("mplus-1m-medium");
   background-color: rgba(255, 255, 255, 0.8);
-  height: 156px;
   opacity: 1;
   margin-top: 4.2666666667vw;
   padding: 4.2666666667vw;
@@ -105,7 +105,6 @@ body.fixed {
 }
 .l-theme__theme {
   background-color: rgba(255, 255, 255, 0.8);
-  height: 156px;
   opacity: 1;
   margin-top: 4.2666666667vw;
   padding: 4.2666666667vw;
@@ -555,6 +554,13 @@ form#form1 {
   display: flex;
 }
 
+@media screen and (min-width: 1025px) {
+  .c-main {
+    width: calc(100% - 300px);
+    background-color: rgb(255, 253, 250);
+  }
+}
+
 .c-text {
   position: relative;
   margin: 18.3333333333vw auto;
@@ -572,9 +578,9 @@ form#form1 {
 @media screen and (min-width: 1025px) {
   .c-text {
     font-size: 1vw;
-    margin: 9vw 2.9vw;
+    margin: 9vw 0;
     line-height: 1.956835vw;
-    width: 697px;
+    width: 55%;
   }
 }
 

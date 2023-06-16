@@ -7,7 +7,8 @@
 
 .c-main{
     @include g.mq(lg){   
-        
+        width: calc(100% - 300px);
+        background-color: rgb(255,253, 250);
     }
     }
 
@@ -25,9 +26,9 @@
     }
     @include g.mq(lg){   
         font-size: 1.0vw; 
-        margin: 9vw 2.9vw;
+        margin: 9vw 0;
         line-height: 1.956835vw;
-        width: 697px;
+        width: calc(100% - 45%);
 ;
     }
 }
