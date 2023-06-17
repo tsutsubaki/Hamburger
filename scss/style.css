@@ -311,7 +311,6 @@ small.l-footer_copyright {
 }
 @media screen and (min-width: 1025px) {
   .l-sidebar__nav {
-    position: static;
     height: 100%;
     overflow: auto;
     right: 0;
@@ -556,7 +555,7 @@ form#form1 {
 
 @media screen and (min-width: 1025px) {
   .c-main {
-    width: calc(100% - 300px);
+    width: calc(100% - 367px);
     background-color: rgb(255, 253, 250);
   }
 }
@@ -582,6 +581,12 @@ form#form1 {
     line-height: 1.956835vw;
     width: 55%;
   }
+}
+
+.c-main {
+  position: fixed;
+  height: 100vh;
+  overflow: auto;
 }
 
 .c-top__caption {
