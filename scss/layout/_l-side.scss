@@ -21,6 +21,9 @@
       visibility: visible;
       opacity: 1;
     
+      @include g.mq(lg){
+        opacity: 0;
+       }
     }
   }
 

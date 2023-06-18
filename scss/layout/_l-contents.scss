@@ -58,6 +58,7 @@ font-size: 16px;
 
 @include g.mq(md){ 
 font-size: 0.9rem;
+margin-top: auto;
 }
 @include g.mq(lg){
    margin: 0 -1vw;

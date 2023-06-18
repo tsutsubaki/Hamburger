@@ -93,6 +93,7 @@ padding-top: 6vw;
 }
 
 @include g.mq(lg){
+    background-image: url(../../../img/map.png);
     
     }
 
@@ -155,8 +156,9 @@ padding-top: 6vw;
                      
         }
         @include g.mq(lg){
-            font-size: 1.597122vw;  
-             
+            font-size: 2.2vw;
+            margin: -1vw 3vw;
+
             }
     }
 
@@ -190,9 +192,9 @@ padding-top: 6vw;
     @include g.mq(md){      
        top: 13.5vw;  
     }
-    @include g.mq(lg){         
-               
-    top: 10.5vw;
-    width: 4vw;                          
+    @include g.mq(lg){        
+        top: 11.5vw;
+        width: 4vw;
+        left: 8vw;                        
     }
 }

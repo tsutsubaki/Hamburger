@@ -8,16 +8,15 @@
 @use "./layout/l-footer";
 @use "./layout/l-side";
 
-@use "./object/component/c-footer";
 @use "./object/component/c-line";
 @use "./object/component/c-logo";
-@use "./object/component/c-search";
 @use "./object/component/c-inner";
 @use "./object/component/c-main";
 
 
 
 @use "./object/project/p-frontpage";
+@use "./object/project/p-search";
 
 
 
