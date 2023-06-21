@@ -47,11 +47,10 @@
   }
 
   @include g.mq(lg){
-      height: 100%;
-     overflow: auto;
-     right: 0;
-     transition: none;
-      
+    height: auto;
+    transition: none;
+    position: static;
+          
     }
 
           
@@ -70,7 +69,7 @@
 &__title{
   font-family: g.$small-font;
   color: #707070;
-  font-style: bold;
+  font-weight: 700;
   @include g.font-size(24);
   line-height: 100%;
   margin: 60px 0px 40px 46px;
@@ -79,7 +78,7 @@
 
 
      &__item{
-        font-weight: 300;
+        font-weight: 400;
         font-family: g.$small-font;
         margin: 20px 102px 20px 66px;
         @include g.font-size(20);
@@ -99,7 +98,7 @@
   height: 4px;
   top: 19px;
   right: -267px;
- 
+  cursor: pointer;
 
   @include g.mq(lg){
     display: none;
