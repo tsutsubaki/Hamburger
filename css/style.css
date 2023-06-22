@@ -348,7 +348,7 @@ small.l-footer_copyright {
 }
 @media screen and (min-width: 1025px) {
   .l-sidebar__nav {
-    height: auto;
+    height: 100%;
     -webkit-transition: none;
     transition: none;
     position: static;
@@ -562,7 +562,7 @@ small.l-footer_copyright {
 @media screen and (min-width: 1025px) {
   .c-main {
     position: static;
-    height: 0;
+    height: 100%;
     overflow: visible;
   }
 }
