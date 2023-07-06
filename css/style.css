@@ -576,8 +576,11 @@ small.l-footer_copyright {
   }
 }
 
+.p-top__caption {
+  background-image: url(../../../img/IPhone-archive_top.png);
+}
+
 .c-top__caption {
-  background-image: url(../../../img/mainvisual-sp.jpg);
   background-position: center;
   height: 75vw;
   position: relative;
@@ -878,4 +881,233 @@ form#form1 {
   form#form1 {
     margin: 0 40px 0 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.p-contents {
+  padding: 0 4.266667vw;
+}
+
+img {
+  display: block;
+}
+
+.p-figcaption {
+  margin-bottom: 4vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .p-figcaption {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.p-figcaption__title-1 {
+  font-size: 3.3333333333vw;
+  margin-top: -1.5vw;
+}
+@media screen and (min-width: 600px) {
+  .p-figcaption__title-1 {
+    font-size: 2.2vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1.3vw;
+  }
+}
+.p-second__title {
+  font-size: 2.6666666667vw;
+}
+@media screen and (min-width: 600px) {
+  .p-second__title {
+    font-size: 2.2vw;
+  }
+}
+.p-back__forward {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5vw 3vw;
+}
+@media screen and (min-width: 600px) {
+  .p-back__forward {
+    display: none;
+  }
+}
+button.p-button {
+  /* text-align: center; */
+  display: block;
+  margin: 4vw auto;
+  padding: 2vw 5.5vw;
+  font-size: 3.3333333333vw;
+  border-radius: 4vw;
+}
+@media screen and (min-width: 600px) {
+  button.p-button {
+    font-size: 1.8vw;
+    padding: 1.2vw 3.5vw;
+    margin: 0 auto;
+  }
+}
+.c-page__link {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .c-page__link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 11vw 0 5vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  .page-number {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.c-border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(112, 112, 112);
+  -webkit-border-image: initial;
+       -o-border-image: initial;
+          border-image: initial;
+}
+
+.c-page__number {
+  color: rgb(112, 112, 112);
+  background-color: rgb(255, 255, 255);
+  font-size: 1.8vw;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin-right: 1.5vw;
+}
+
+.p-archive__caption {
+  background-image: url(../../../img/IPhone-archive_top.png);
+}
+.p-archive__caption::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.4;
+}
+@media screen and (min-width: 600px) {
+  .p-archive__caption {
+    background-image: url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.p-top__title {
+  font-family: "Roboto";
+}
+@media screen and (min-width: 600px) {
+  .p-top__title {
+    font-size: 5.8536585366vw;
+    position: inherit;
+    top: 0;
+  }
+}
+.p-title {
+  position: absolute;
+  top: 45.628297vw;
+  left: 10.3117505995vw;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 600px) {
+  .p-title {
+    position: inherit;
+    top: 0;
+    left: 12.311751vw;
+    font-size: 2.6666666667vw;
+  }
+}
+.p-sub__title {
+  font-size: 6.666667vw;
+  color: rgb(60, 42, 16);
+  left: 10.3117505995vw;
+}
+@media screen and (min-width: 600px) {
+  .p-sub__title {
+    font-size: 4.5vw;
+  }
+}
+.p-sub__area {
+  margin-bottom: 5vw;
+}
+@media screen and (min-width: 600px) {
+  .p-sub__area {
+    font-size: 1.8vw;
+  }
+}
+.p-second__title {
+  font-weight: 700;
+  padding: 2vw 0 1vw 0;
+}
+@media screen and (min-width: 600px) {
+  .p-second__title {
+    font-weight: 400;
+    padding: 1vw 0 1vw 0;
+  }
+}
+.p-theme {
+  background-color: rgb(60, 43, 28);
+  width: 100%;
+  height: auto;
+  color: #FFFFFF;
+  padding: 5vw;
+}
+@media screen and (min-width: 600px) {
+  .p-theme {
+    padding: 2vw;
+  }
+}
+.p-theme__service {
+  font-size: 2.6666666667vw;
+}
+@media screen and (min-width: 600px) {
+  .p-theme__service {
+    font-size: 1.8vw;
+    font-weight: 300;
+    line-height: 1.8rem;
+    padding-bottom: 3vw;
+  }
+}
+/*archive*//*# sourceMappingURL=style.css.map */
