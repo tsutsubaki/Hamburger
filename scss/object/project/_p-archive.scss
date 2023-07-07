@@ -113,7 +113,7 @@
     @include g.mq(md){
         padding: 2vw;
         min-height: 26.1875rem;
-
+        width: calc(100% - 50%);
         }
         @include g.mq(lg){
             min-height: 0rem;         
@@ -138,3 +138,8 @@
         }
 }
 
+figure.p-archive__image {
+    @include g.mq(md){
+    width: calc(100% - 50%);
+}
+}

@@ -1140,6 +1140,7 @@ li.c-page__number.c-border:last-child {
   .p-theme {
     padding: 2vw;
     min-height: 26.1875rem;
+    width: 50%;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -1162,6 +1163,12 @@ li.c-page__number.c-border:last-child {
   .p-theme__service {
     font-size: 0.8vw;
     line-height: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  figure.p-archive__image {
+    width: 50%;
   }
 }
 
