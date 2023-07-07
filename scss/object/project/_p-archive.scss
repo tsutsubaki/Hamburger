@@ -52,7 +52,8 @@
         font-size: 2.666666666666667vw;
       }
       @include g.mq(lg){
-        
+        top: 11px;
+        left: 6.311751vw;
           
          }
 }
@@ -111,10 +112,11 @@
 
     @include g.mq(md){
         padding: 2vw;
+        min-height: 26.1875rem;
 
         }
         @include g.mq(lg){
-
+            min-height: 0rem;         
 
         }
 
@@ -130,8 +132,8 @@
             padding-bottom: 3vw;
          }
          @include g.mq(lg){
-    
-      
+            font-size: 0.8vw;
+            line-height: 1.1rem;
          }
         }
 }

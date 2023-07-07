@@ -52,3 +52,18 @@ img{
           }
 
 }
+
+.l-archive__img {
+  min-height: 26.1875rem;
+  object-fit: cover;
+  object-position: 40% center;
+
+  @include g.mq(md){
+  
+  }
+  
+  @include g.mq(lg){
+   
+      
+     }
+}
