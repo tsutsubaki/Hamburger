@@ -19,7 +19,7 @@
      }
 
      @include g.mq(lg){
-       
+      height: 23.9vw;
          
         }
 }
@@ -54,7 +54,7 @@
       @include g.mq(lg){
         top: 11px;
         left: 6.311751vw;
-          
+        font-size: 1.560975609756097vw;
          }
 }
 
@@ -67,7 +67,7 @@
         font-size: 4.5vw;
       }
       @include g.mq(lg){
-        
+        font-size: 3.51219512195122vw;
           
          }
 
@@ -80,7 +80,7 @@
         font-size: 1.8vw;
       }
       @include g.mq(lg){
-        
+        font-size: 1.5609756097560976vw;
           
          }
 }
@@ -95,7 +95,8 @@
       }
 
       @include g.mq(lg){
-        
+        font-weight: 500;
+        font-size: 1.441463vw;
           
          }
 

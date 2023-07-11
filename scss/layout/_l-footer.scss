@@ -60,3 +60,15 @@ small.l-footer_copyright{
        
       }
    }
+
+
+   /*archive-footer*/
+   .p-archive__footer {
+      height: auto;
+      padding-bottom: 2vw;
+
+      .__p {
+         font-size: 1.5vw;
+         padding: 2vw 0 1vw;
+   }
+}
