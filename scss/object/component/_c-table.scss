@@ -1,0 +1,29 @@
+.c-table {
+    border-collapse: collapse;
+    border: solid 1px rgba(112, 112, 112, 1);
+    font-size: 2.666666666666667vw;
+    margin-bottom: 9vw;
+    background-color: rgba(255, 255, 255, 1);
+
+    &__tr
+    {
+        border: solid 1px rgba(112, 112, 112, 1);
+
+    }
+
+}       
+
+    td {
+           
+            &:first-of-type{
+                padding: 3vw 17vw 3vw 4vw;
+                border-right: solid 1px;
+            }
+
+            &:last-of-type{
+                padding: 3vw 45vw 3vw 4vw;
+            }
+    }
+
+
+

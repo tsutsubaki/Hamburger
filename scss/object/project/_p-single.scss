@@ -30,7 +30,8 @@
     line-height: 3.9600000000000004vw;
     font-size: 2.666666666666667vw;
     color: rgba(60, 42, 16, 1);
-}
+
+    }
 
 .p-sub-single__area{
     font-size: 2.666666666666667vw;
@@ -55,5 +56,20 @@
     font-size: 2.666666666666667vw;
     width: 100%;
     height: 100%;
-    
+    padding: 0 3vw 15vw;
+
+    &__inner{
+        padding-bottom: 5vw;
+    }
+ }
+
+ .p-single__smallpic{
+margin-top: 5vw;
+ 
+ &__first{
+   width: 70.833333vw ;
+   height: auto;
+   margin: 0 auto ;
+
+ }
 }

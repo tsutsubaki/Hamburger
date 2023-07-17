@@ -7,6 +7,7 @@
 
     @include g.mq(md){
       display: none;
+      
    }
   
    @include g.mq(lg){
@@ -90,3 +91,15 @@
     }
 }
  
+
+//*singleボタン://
+
+.c-single__button{
+    padding: 4vw 22vw;
+    font-size: 1.666667vw;
+    color: rgba(60, 42, 16, 1);
+    margin-bottom: 7vw;
+    border-radius: 10px;
+    border: solid 1px;
+    background-color: rgba(222, 216, 211, 1);
+}
