@@ -11,7 +11,14 @@
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;   
+    
+    @include g.mq(lg){
+        height: 40vw;             
+    }   
+
+
+
 }
 
 .p-single__static{

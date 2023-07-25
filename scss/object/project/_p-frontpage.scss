@@ -1,7 +1,7 @@
 @use '../../foundation/global' as g;
 
 .p-top__caption{
-    background-image: url(../../../img/IPhone-archive_top.png);
+    background-image: url(../../../img/mainvisual-sp.jpg);
 }
 
 .c-top__caption{
@@ -13,7 +13,7 @@
     
 
 @include g.mq(md){
-   height: 285px;
+   height: 27.833333vw;
    background-repeat: no-repeat;
    background-size: cover;  
     
@@ -54,10 +54,10 @@
 section{
 
 &.figcaption-1{
-    background-image: url("../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png");
+    background-image: url("../../../img/middleburger.jpeg");
     
     @include g.mq(md){
-    margin-right: 0;
+    
      }
 
      @include g.mq(lg){

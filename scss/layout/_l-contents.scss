@@ -6,7 +6,13 @@
 
 .c-center__caption {
     @include g.mq(md){
-    display: flex;   }
+    display: flex; 
+    margin: 0 2vw;  
+    }
+
+    @include g.mq(lg){
+    margin: 0 2vw ;
+    }
 }
 
 .figcaption{
@@ -18,15 +24,16 @@
     
     @include g.mq(md){
         padding: 2vw;    
-        width: calc( 100% - 50%);   
+        margin: 5vw 2vw;
         }
 
       @include g.mq(lg){
-        width: 60.97560975609756vw;
-        margin-top: 7rem;  
+         margin-top: 4rem;  
         display: flex;
         flex-flow: column;
         justify-content: flex-end;
+        height: 68.7vw;
+       
 }
 }
 

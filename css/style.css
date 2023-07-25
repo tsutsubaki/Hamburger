@@ -128,6 +128,12 @@ img {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    margin: 0 2vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-center__caption {
+    margin: 0 2vw;
   }
 }
 
@@ -141,13 +147,12 @@ img {
 @media screen and (min-width: 600px) {
   .figcaption {
     padding: 2vw;
-    width: 50%;
+    margin: 5vw 2vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .figcaption {
-    width: 60.9756097561vw;
-    margin-top: 7rem;
+    margin-top: 4rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -161,6 +166,7 @@ img {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    height: 68.7vw;
   }
 }
 
@@ -707,7 +713,7 @@ td:last-of-type {
 }
 
 .p-top__caption {
-  background-image: url(../../../img/IPhone-archive_top.png);
+  background-image: url(../../../img/mainvisual-sp.jpg);
 }
 
 .c-top__caption {
@@ -718,7 +724,7 @@ td:last-of-type {
 }
 @media screen and (min-width: 600px) {
   .c-top__caption {
-    height: 285px;
+    height: 27.833333vw;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -756,12 +762,7 @@ td:last-of-type {
 }
 
 section.figcaption-1 {
-  background-image: url("../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png");
-}
-@media screen and (min-width: 600px) {
-  section.figcaption-1 {
-    margin-right: 0;
-  }
+  background-image: url("../../../img/middleburger.jpeg");
 }
 @media screen and (min-width: 1025px) {
   section.figcaption-1 {
@@ -1317,6 +1318,11 @@ li.c-page__number.c-border:last-child {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 1025px) {
+  .p-single__caption {
+    height: 40vw;
+  }
 }
 
 .p-single__static {
