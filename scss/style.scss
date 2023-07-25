@@ -22,16 +22,17 @@
 @use "./object/project/p-search";
 
 
-/*archive*/
+//archive
 @use "./object/component/c-button";
 @use "./object/component/c-page";
 
 @use "./object/project/p-archive";
 
-/*single*/
+//single
 @use "./object/project/p-single";
 @use "./layout/l-single";
 
-
+//page
+@use "./object/project/p-page";
 
 

@@ -102,4 +102,8 @@
     border-radius: 10px;
     border: solid 1px;
     background-color: rgba(222, 216, 211, 1);
+
+    @include g.mq(lg){
+    padding: 3vw 11vw;
+}
 }
