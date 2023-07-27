@@ -129,6 +129,9 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin: 0 2vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1025px) {
@@ -148,6 +151,13 @@ img {
   .figcaption {
     padding: 2vw;
     margin: 5vw 2vw;
+    min-height: 643px;
+    height: 100%;
+    display: grid;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -177,11 +187,6 @@ img {
   margin-top: 4.2666666667vw;
   padding: 4.2666666667vw;
   font-family: "M+ 1m";
-}
-@media screen and (min-width: 600px) {
-  .l-theme {
-    height: 156px;
-  }
 }
 .l-theme__theme {
   background-color: rgba(255, 255, 255, 0.8);
@@ -218,7 +223,6 @@ img {
 @media screen and (min-width: 600px) {
   .l-item {
     padding: 2.6666666667vw;
-    height: auto;
   }
 }
 
@@ -781,13 +785,14 @@ section.figcaption-2 {
 }
 @media screen and (min-width: 600px) {
   .p-solution__list {
-    margin-top: 0px;
+    margin-top: 9vw;
     padding: 6vw 4.666667vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-solution__list {
     background-image: url(../../../img/map.png);
+    margin-top: 4vw;
   }
 }
 
@@ -857,14 +862,8 @@ section.figcaption-2 {
   color: #FFFFFF;
 }
 .p-item {
-  margin-top: 58.6666vw;
+  margin-top: 25.6666vw;
 }
-@media screen and (min-width: 600px) {
-  .p-item {
-    margin-top: auto;
-  }
-}
-
 @media screen and (min-width: 600px) {
   .p-last__title {
     top: 13.5vw;

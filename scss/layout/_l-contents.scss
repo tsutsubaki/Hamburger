@@ -8,6 +8,10 @@
     @include g.mq(md){
     display: flex; 
     margin: 0 2vw;  
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+   
     }
 
     @include g.mq(lg){
@@ -25,6 +29,10 @@
     @include g.mq(md){
         padding: 2vw;    
         margin: 5vw 2vw;
+        min-height: 643px;
+        height: 100%;
+        display: grid;
+        align-items: end;
         }
 
       @include g.mq(lg){
@@ -45,7 +53,7 @@
 
     @include g.mq(md){
     
-        height: 156px;
+        
                }
    
  
@@ -83,6 +91,6 @@ margin-top: auto;
 .l-item {
     @include g.mq(md){   
      padding: 2.666666666666667vw ;
-     height: auto;
+     
 }
 }

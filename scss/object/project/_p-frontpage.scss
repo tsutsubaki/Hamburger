@@ -91,12 +91,13 @@ padding-top: 6vw;
 
 
 @include g.mq(md){
-    margin-top: 0px;
+    margin-top: 9vw;
     padding: 6vw 4.666667vw;
 }
 
 @include g.mq(lg){
     background-image: url(../../../img/map.png);
+    margin-top: 4vw;
     
     }
 
@@ -182,10 +183,10 @@ padding-top: 6vw;
  
 
  .p-item{ 
-    margin-top: 58.6666vw;
+    margin-top: 25.6666vw;
 
     @include g.mq(md){         
-      margin-top: auto;
+      
     }
 
  }
